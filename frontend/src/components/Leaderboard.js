@@ -10,28 +10,28 @@ export default function Leaderboard() {
           <tr>
             <th scope="col">#</th>
             <th scope="col">Name</th>
-            <th scope="col">Surname</th>
             <th scope="col">Username</th>
+            <th scope="col">Points</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Eugene</td>
-            <td>Stepnov</td>
-            <td>@e93</td>
+            <td>person1</td>
+            <td>@p1</td>
+            <td>20</td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Mark</td>
-            <td>Dever</td>
-            <td>@md111</td>
+            <td>person2</td>
+            <td>@p2</td>
+            <td>15</td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>John</td>
-            <td>Piper</td>
-            <td>@piper</td>
+            <td>person3</td>
+            <td>@p3</td>
+            <td>11</td>
           </tr>
         </tbody>
       </table>
