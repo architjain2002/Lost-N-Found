@@ -11,15 +11,24 @@ export default function Uploads() {
     setImageFile([]); // whenever changes happen again we delete all the image from the curr state.
     for (let index = 0; index < fileList.length; index++) {
       const file = fileList[index];
-      setImageFile((prevState) => {
-        return [...prevState, { id: uuidv4(), value: file }];
-      });
+
+      // start of the coversion to base64 creation using file reader
+      var reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onloadend = function () {
+        console.log("RESULT", reader.result);
+        setImageFile((prevState) => {
+          return [...prevState, { id: uuidv4(), value: reader.result }];
+        });
+      };
     }
   }
 
   useEffect(() => {
     console.log(ImageFile);
   }, [ImageFile]);
+
+  function imageBlob() {}
 
   return (
     <div>
@@ -36,7 +45,7 @@ export default function Uploads() {
           <>
             {/* <li key={images.id}>{images.value.name}</li>
             <img src={URL.createObjectURL(images.value)}></img> */}
-            <li key={images.id}>{URL.createObjectURL(images.value)}</li>
+            <li key={images.id}>{images.value}</li>
           </>
         ))}
       </ul>
