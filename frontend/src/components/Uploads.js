@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 export default function Uploads() {
   const [ImageFile, setImageFile] = useState([]);
@@ -11,7 +12,7 @@ export default function Uploads() {
     for (let index = 0; index < fileList.length; index++) {
       const file = fileList[index];
       setImageFile((prevState) => {
-        return [...prevState, file];
+        return [...prevState, { id: uuidv4(), value: file }];
       });
     }
   }
@@ -31,9 +32,7 @@ export default function Uploads() {
       />
 
       {/* <div>
-        {ImageFile.map((image) => (
-          <p>{image}</p>
-        ))}
+        <img src={ImageFile[0]}></img>
       </div> */}
     </div>
   );
