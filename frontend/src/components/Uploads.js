@@ -15,7 +15,13 @@ export default function Uploads() {
 
       // start of the coversion to base64 creation using file reader
       reader.onload = function (event) {
-        console.log("RESULT", event.target.result);
+        console.log("RESULT", event.target.result); // base64 value
+
+        // var bindata = new Buffer.alloc(
+        //   event.target.result.split(",")[1],     //! this snippet of code should be in nodejs
+        //   "base64"                               //! basically conversion of base64 to buffer and store it in mongodb buffer
+        // );
+
         setImageFile((prevState) => {
           return [...prevState, { id: uuidv4(), value: event.target.result }];
         });
