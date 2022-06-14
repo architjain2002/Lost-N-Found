@@ -38,7 +38,7 @@ export default function Uploads() {
     <div>
       <input
         type="file"
-        accept="image/png, image/jpeg"
+        accept="image/*;capture=camera" //camera option given
         id="InputImage"
         onChange={imageFileHandler}
         multiple
@@ -47,8 +47,8 @@ export default function Uploads() {
       <ul>
         {ImageFile.map((images) => (
           <>
-            {/* <li key={images.id}>{images.value.name}</li>
-            <img src={URL.createObjectURL(images.value)}></img> */}
+            {/* <li key={images.id}>{images.value.name}</li> */}
+            {/* <img src={images.value}></img> */}
             <li key={images.id}>{images.value}</li>
           </>
         ))}
