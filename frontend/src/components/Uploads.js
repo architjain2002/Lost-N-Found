@@ -31,9 +31,15 @@ export default function Uploads() {
         multiple
       />
 
-      {/* <div>
-        <img src={ImageFile[0]}></img>
-      </div> */}
+      <ul>
+        {ImageFile.map((images) => (
+          <>
+            {/* <li key={images.id}>{images.value.name}</li>
+            <img src={URL.createObjectURL(images.value)}></img> */}
+            <li key={images.id}>{URL.createObjectURL(images.value)}</li>
+          </>
+        ))}
+      </ul>
     </div>
   );
 }
