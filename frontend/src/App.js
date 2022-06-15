@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar.js";
-import Leaderboard from "./components/Leaderboard.js";
-import TextBox from "./components/TextBox.js";
+import Feeds from "./pages/Feeds.js";
+import Upload from "./pages/Upload.js";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/feeds">
+          <Route exact path="/feeds">
             <Feeds />
           </Route>
 

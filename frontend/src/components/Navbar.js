@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-primary">
@@ -17,18 +17,21 @@ export default function Navbar() {
         <div className="navbar-collapse collapse" id="collapseNavbar">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="#" style={{ fontSize: "20px" }}>
+              <Link
+                to="/feeds"
+                className="nav-link"
+                style={{ fontSize: "20px" }}>
                 Feeds
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
+              <Link
+                to="/upload"
                 className="nav-link"
-                href="#"
-                data-bs-toggle="collapse"
+                // data-bs-toggle="collapse"
                 style={{ fontSize: "20px" }}>
                 Upload
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="navbar-nav ms-auto ">
