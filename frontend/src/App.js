@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar.js";
 import Leaderboard from "./components/Leaderboard.js";
-// import Uploads from "./components/Uploads.js";
 import TextBox from "./components/TextBox.js";
 
 function App() {
@@ -8,7 +7,6 @@ function App() {
     <>
       <Navbar />
       <Leaderboard />
-      {/* <Uploads /> */}
       <TextBox />
     </>
   );

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-export default function Uploads() {
+export default function UploadImage() {
   const [ImageFile, setImageFile] = useState([]);
 
   // stores the imagefiles into the ImageFile state
