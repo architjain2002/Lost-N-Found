@@ -4,9 +4,13 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-primary">
       <div className="container-fluid">
-        <a className="navbar-brand abs" href="#" style={{ fontSize: "20px" }}>
+        <Link
+          to="feeds"
+          className="navbar-brand abs"
+          href="#"
+          style={{ fontSize: "20px" }}>
           L&F
-        </a>
+        </Link>
         <button
           className="navbar-toggler ms-auto"
           type="button"
