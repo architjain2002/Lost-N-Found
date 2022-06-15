@@ -12,7 +12,7 @@ export default function TextBox() {
     setDate(event.target.value);
   }
   function contactHandler(event) {
-    setDate(event.target.value);
+    setContact(event.target.value);
   }
 
   // useEffect(() => {
