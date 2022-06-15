@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Uploads from "./Uploads.js";
 
 export default function TextBox() {
   const [Text, setText] = useState(""); // this will store the description text
@@ -22,6 +23,7 @@ export default function TextBox() {
     <form>
       <div className="form-group">
         {/* <label for="exampleFormControlTextarea1">Example textarea</label> */}
+        <Uploads />
         <textarea
           className="form-control col-sm"
           id="exampleFormControlTextarea1"
