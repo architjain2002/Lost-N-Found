@@ -20,25 +20,27 @@ export default function TextBox() {
   // }, [Text]);
 
   return (
-    <form>
-      <div className="form-group">
-        {/* <label for="exampleFormControlTextarea1">Example textarea</label> */}
-        <UploadImage />
-        <textarea
-          className="form-control col-sm"
-          id="exampleFormControlTextarea1"
-          rows="5"
-          style={{ width: "70%" }}
-          onChange={textHandler}></textarea>
-      </div>
-      <input type="date" onChange={dateHandler}></input>
-      <input
-        type="text"
-        className="form-control"
-        id="formGroupExampleInput"
-        placeholder="Contact No"
-        style={{ width: "30%" }}
-        onChange={contactHandler}></input>
-    </form>
+    <div className="d-flex justify-content-center">
+      <form>
+        <div className="form-group">
+          {/* <label for="exampleFormControlTextarea1">Example textarea</label> */}
+          <UploadImage />
+          <textarea
+            className="form-control col-sm"
+            id="exampleFormControlTextarea1"
+            rows="5"
+            style={{ width: "70%" }}
+            onChange={textHandler}></textarea>
+        </div>
+        <input type="date" onChange={dateHandler}></input>
+        <input
+          type="text"
+          className="form-control"
+          id="formGroupExampleInput"
+          placeholder="Contact No"
+          style={{ width: "30%" }}
+          onChange={contactHandler}></input>
+      </form>
+    </div>
   );
 }

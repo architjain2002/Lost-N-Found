@@ -36,11 +36,15 @@ export default function UploadImage() {
 
   return (
     <div>
+      <label htmlFor="InputImage">
+        <img src="./imageUploadIcon.png" style={{ width: "25%" }} />
+      </label>
       <input
         type="file"
         accept="image/*;capture=camera" //camera option given
         id="InputImage"
         onChange={imageFileHandler}
+        style={{ display: "none" }}
         multiple
       />
 
