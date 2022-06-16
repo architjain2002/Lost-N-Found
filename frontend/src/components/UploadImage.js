@@ -37,7 +37,7 @@ export default function UploadImage() {
   return (
     <div>
       <label htmlFor="InputImage">
-        <img src="./imageUploadIcon.png" style={{ width: "25%" }} />
+        <img src="./imageUploadIcon.png" style={{ width: "50%" }} />
       </label>
       <input
         type="file"

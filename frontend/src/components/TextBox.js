@@ -22,20 +22,20 @@ export default function TextBox() {
   return (
     <div className="d-flex align-items-center justify-content-center">
       <form>
-        <div className="form-group col-md-6">
+        <div className="form-group col-lg-12">
           {/* <label for="exampleFormControlTextarea1">Example textarea</label> */}
           <UploadImage />
           <label htmlFor="exampleFormControlTextarea1">Description</label>
           <textarea
             className="form-control"
             id="exampleFormControlTextarea1"
-            rows="5"
+            rows="8"
             // style={{ width: "70%" }}
             onChange={textHandler}></textarea>
         </div>
 
-        <div className="form-row">
-          <div className="form-group col-md-2">
+        <div className="row">
+          <div className="form-group col-sm-6">
             <label htmlFor="dateId">Date</label>
             <input
               type="date"
@@ -44,7 +44,7 @@ export default function TextBox() {
               id="dateId"></input>
           </div>
 
-          <div className="form-group col-md-2">
+          <div className="form-group col-sm-6">
             <label htmlFor="formGroupExampleInput">Contact</label>
             <input
               type="text"
