@@ -39,7 +39,12 @@ export default function UploadImage() {
       <label htmlFor="InputImage">
         <img
           src="./imageUploadIcon2.png"
-          style={{ width: "30%", marginLeft: "35%", backgroundColor: "white" }} // margin left = 50 - width/2 for whatever width value for the img to be in center
+          style={{
+            width: "30%",
+            marginLeft: "35%",
+            backgroundColor: "white",
+            marginTop: "10%",
+          }} // margin left = 50 - width/2 for whatever width value for the img to be in center
         />
       </label>
       <input
